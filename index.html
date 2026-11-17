@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Flávio Pneu</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Flávio Pneu">
+        </a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="./pages/inicio.html">Início</a>
+            <a href="./pages/pneus.html">Pneus</a>
+            <a href="#">Marcas</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <div class="acoes">
+
+            <button type="button" class="icone-btn" aria-label="Pesquisar">
+                <i data-lucide="search"></i>
+            </button>
+
+            <button type="button" class="icone-btn" aria-label="Carrinho">
+                <i data-lucide="shopping-cart"></i>
+            </button>
+
+            <a href="#" class="btn-orcamento">
+                Solicitar orçamento
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ÁREA PRINCIPAL -->
+    <main class="area-login">
+
+        <section class="card-login">
+
+            <!-- LOGO -->
+            <img src="img/logo.png" alt="Flávio Pneu" class="logo-login">
+
+            <h1>Bem-vindo de volta!</h1>
+
+            <p class="descricao">
+                Faça login para acessar sua conta<br>
+                e continuar sua compra.
+            </p>
+
+
+            <!-- FORMULÁRIO -->
+            <form id="form-login">
+
+                <!-- E-MAIL OU CPF -->
+                <div class="campo">
+
+                    <label for="usuario">
+                        E-mail ou CPF
+                    </label>
+
+                    <div class="caixa-input">
+
+                        <i data-lucide="user-round"></i>
+
+                        <input type="text" id="usuario" name="usuario" placeholder="Digite seu e-mail ou CPF"
+                            autocomplete="username" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SENHA -->
+                <div class="campo">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <div class="caixa-input">
+
+                        <i data-lucide="lock-keyhole"></i>
+
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha"
+                            autocomplete="current-password" required>
+
+                        <button type="button" id="mostrar-senha" class="btn-olho" aria-label="Mostrar senha"
+                            aria-pressed="false">
+                            <i data-lucide="eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- OPÇÕES -->
+                <div class="opcoes-login">
+
+                    <label class="lembrar">
+
+                        <input type="checkbox" id="lembrar">
+
+                        Lembrar de mim
+
+                    </label>
+
+                    <a href="#" class="esqueci">
+                        Esqueci minha senha
+                    </a>
+
+                </div>
+
+
+                <!-- ENTRAR -->
+                <button type="submit" class="btn-entrar">
+                    Entrar
+                   <i data-lucide="arrow-right"></i>
+                </button>
+
+                <p id="mensagem" role="status" aria-live="polite"></p>
+
+
+                <!-- DIVISOR -->
+                <div class="divisor">
+                    <span>ou</span>
+                </div>
+
+
+                <!-- CRIAR CONTA -->
+                <a href="#" class="btn-criar">
+
+                    <i data-lucide="user-round-plus"></i>
+
+                    Criar uma conta
+
+                </a>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Flávio Pneu">
+        </div>
+
+
+        <div class="footer-contato">
+
+            <p>
+                <i data-lucide="map-pin"></i>
+                Rua Exemplo, 123 - Centro
+            </p>
+
+            <p>
+                <i data-lucide="phone"></i>
+                (15) 98765-4321
+            </p>
+
+            <p>
+                <i data-lucide="mail"></i>
+                flaviopneus@contato.com.br
+            </p>
+
+        </div>
+
+
+        <div class="footer-redes">
+
+            <p>Acompanhe nas redes</p>
+
+            <div class="redes-icones">
+
+                <a href="#" aria-label="Instagram">
+                    <i data-lucide="instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i data-lucide="facebook"></i>
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    <i data-lucide="message-circle"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-slogan">
+            Pneus de qualidade<br>
+            para você ir mais longe.
+        </div>
+
+    </footer>
+
+
+    <!-- ÍCONES -->
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,622 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101113;
+    color: #111;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    width: 100%;
+    height: 60px;
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    background: #101113;
+}
+
+/* LOGO */
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 115px;
+    height: auto;
+    display: block;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.menu a {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #e30613;
+}
+
+/* AÇÕES */
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-shrink: 0;
+}
+
+.icone-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+    color: white;
+
+    cursor: pointer;
+}
+
+.icone-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.icone-btn:hover {
+    color: #e30613;
+}
+
+/* BOTÃO ORÇAMENTO */
+
+.btn-orcamento {
+    display: inline-block;
+
+    background: #c90012;
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+
+    transition: background 0.2s;
+}
+
+.btn-orcamento:hover {
+    background: #e30613;
+}
+
+
+/* =========================
+   FUNDO DO LOGIN
+========================= */
+
+.area-login {
+    min-height: calc(100vh - 145px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px 20px;
+
+    background-image: url("../img/foto-login.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =========================
+   CARD DE LOGIN
+========================= */
+
+.card-login {
+    width: 100%;
+    max-width: 420px;
+
+    background: #fff;
+
+    border-radius: 7px;
+    padding: 22px 26px 30px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* LOGO CENTRAL */
+
+.logo-login {
+    display: block;
+
+    width: 135px;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto 5px;
+}
+
+/* TÍTULO */
+
+.card-login h1 {
+    text-align: center;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    margin-bottom: 8px;
+}
+
+/* DESCRIÇÃO */
+
+.descricao {
+    text-align: center;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CAMPOS DO FORMULÁRIO
+========================= */
+
+.campo {
+    margin-bottom: 22px;
+}
+
+.campo label {
+    display: block;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+/* CAIXA DO INPUT */
+
+.caixa-input {
+    width: 100%;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 0 10px;
+
+    border: 1px solid #999;
+    border-radius: 4px;
+
+    background: white;
+
+    transition: border-color 0.2s;
+}
+
+.caixa-input:focus-within {
+    border-color: #e30613;
+}
+
+/* ÍCONES DOS INPUTS */
+
+.caixa-input>svg {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+
+    color: #222;
+}
+
+/* INPUT */
+
+.caixa-input input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 12px;
+    color: #333;
+}
+
+.caixa-input input::placeholder {
+    color: #999;
+}
+
+/* BOTÃO MOSTRAR SENHA */
+
+.btn-olho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    color: #222;
+
+    cursor: pointer;
+}
+
+.btn-olho svg {
+    width: 19px;
+    height: 19px;
+}
+
+
+/* =========================
+   OPÇÕES DE LOGIN
+========================= */
+
+.opcoes-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+/* LEMBRAR DE MIM */
+
+.lembrar {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #777;
+
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.lembrar input {
+    accent-color: #e30613;
+    cursor: pointer;
+}
+
+/* ESQUECI A SENHA */
+
+.esqueci {
+    color: #e30613;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.esqueci:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   BOTÃO ENTRAR
+========================= */
+
+.btn-entrar {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #e30613;
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background 0.2s;
+}
+
+.btn-entrar:hover {
+    background: #bd0010;
+}
+
+.btn-entrar svg {
+    width: 19px;
+    height: 19px;
+}
+
+/* MENSAGENS */
+
+#mensagem {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 8px;
+    color: #d00012;
+}
+
+#mensagem:empty {
+    display: none;
+}
+
+
+/* =========================
+   DIVISOR
+========================= */
+
+.divisor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin: 20px 0;
+
+    color: #555;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.divisor::before,
+.divisor::after {
+    content: "";
+
+    flex: 1;
+    height: 1px;
+
+    background: #eee;
+}
+
+
+/* =========================
+   BOTÃO CRIAR CONTA
+========================= */
+
+.btn-criar {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    background: white;
+    color: #666;
+
+    font-size: 12px;
+
+    transition: 0.2s;
+}
+
+.btn-criar svg {
+    width: 19px;
+    height: 19px;
+}
+
+.btn-criar:hover {
+    border-color: #e30613;
+    color: #e30613;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    min-height: 85px;
+
+    padding: 12px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    background: #101113;
+    color: white;
+}
+
+/* LOGO RODAPÉ */
+
+.footer-logo img {
+    width: 115px;
+    height: auto;
+    display: block;
+}
+
+/* CONTATO */
+
+.footer-contato {
+    font-size: 10px;
+    color: #ddd;
+}
+
+.footer-contato p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 5px 0;
+}
+
+.footer-contato svg {
+    width: 13px;
+    height: 13px;
+}
+
+/* REDES SOCIAIS */
+
+.footer-redes {
+    text-align: center;
+
+    font-size: 10px;
+    color: #ddd;
+}
+
+.redes-icones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 8px;
+}
+
+.redes-icones a {
+    color: white;
+    transition: color 0.2s;
+}
+
+.redes-icones a:hover {
+    color: #e30613;
+}
+
+.redes-icones svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* SLOGAN */
+
+.footer-slogan {
+    color: #ddd;
+
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .menu {
+        gap: 18px;
+    }
+
+    .acoes {
+        gap: 12px;
+    }
+
+    .cabecalho {
+        padding: 0 3%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .cabecalho {
+        padding: 0 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .acoes {
+        gap: 12px;
+    }
+
+    .btn-orcamento {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .area-login {
+        min-height: calc(100vh - 60px);
+        padding: 35px 15px;
+    }
+
+    .card-login {
+        max-width: 390px;
+        padding: 25px 20px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .footer-contato p {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .logo img {
+        width: 95px;
+    }
+
+    .card-login h1 {
+        font-size: 22px;
+    }
+
+    .opcoes-login {
+        flex-wrap: wrap;
+    }
+
+    .acoes .icone-btn {
+        display: none;
+    }
+}
